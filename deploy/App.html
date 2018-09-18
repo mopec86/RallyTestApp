@@ -7,7 +7,7 @@
 
     <script type="text/javascript">
         Rally.onReady(function () {
-                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",launch:function(){}});
+                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",items:{html:"My first rally App only prints this message (and one more in log)."},launch:function(){console.log("First App Deployed In Rally-App-Builder created by JCMP")}});
 
             Rally.launchApp('CustomApp', {
                 name:"RallyTestApp",
